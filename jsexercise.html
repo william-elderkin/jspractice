@@ -5,13 +5,25 @@
   <title>Page Title</title>
 </head>
 <body>
+<p>9</p>
   <script>
     // Your JavaScript goes here!
-    function capitalize(word) {
-    newWord= word.toLowerCase();
-    console.log(newWord[0].toUpperCase() + newWord.substring(1))
+   let chosenNumber = parseInt(prompt("Pick a number"));
+    for (let i = 1; i <= chosenNumber; i++) {
+         if (i % 3 === 0 && i % 5 ===  0) {
+            console.log("FizzBuzz");
+ }        else if (i % 3 === 0) {
+            console.log("Fizz");
+ }       else if (i % 5 === 0) {
+            console.log("Buzz");
+ }            else {
+            console.log(i);
 }
-capitalize("shutTeR")
+
+                                          }
+     
+
+
   </script>
 </body>
 </html>
